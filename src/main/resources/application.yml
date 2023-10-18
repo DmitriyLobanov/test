@@ -1,0 +1,25 @@
+telegram:
+  api:
+    url: "https://api.telegram.org"
+  webhook:
+    path:  "https://donbas.rdud.ru"
+  bot:
+    name: "tomsk_special_economic_zone_Bot"
+    token: "6476769882:AAE2qDMKzQv7Zqg3DAV226XISdqaH5CRRa8"
+
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://postgres:5432/postgres  # Use "postgres" as the hostname
+  liquibase:
+    user: postgres
+    password: postgres
+    url: jdbc:postgresql://postgres:5432/postgres  # Use "postgres" as the hostname
+    enabled: false  # Set this to true if you want to use Liquibase
+
+server:
+  port: 8080
